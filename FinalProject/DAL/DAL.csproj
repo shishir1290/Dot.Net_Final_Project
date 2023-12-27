@@ -58,6 +58,7 @@
     <Compile Include="EF\Model\Category.cs" />
     <Compile Include="EF\Model\Order.cs" />
     <Compile Include="EF\Model\Products.cs" />
+    <Compile Include="EF\Model\Seller.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202312251217119_initDB.cs" />
