@@ -17,6 +17,7 @@ namespace DAL.EF
         public DbSet<Model.Sellers> Sellers { get; set; }
         public DbSet<Model.Review> Reviews { get; set; }
         public DbSet<Model.Cart> Carts { get; set; }
+        public DbSet<Model.Token> Tokens { get; set; }
 
     }
 }

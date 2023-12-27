@@ -61,11 +61,16 @@
     <Compile Include="EF\Model\Products.cs" />
     <Compile Include="EF\Model\Review.cs" />
     <Compile Include="EF\Model\Sellers.cs" />
+    <Compile Include="EF\Model\Token.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202312271142432_dbinit.cs" />
     <Compile Include="Migrations\202312271142432_dbinit.designer.cs">
       <DependentUpon>202312271142432_dbinit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312271530515_tokendb.cs" />
+    <Compile Include="Migrations\202312271530515_tokendb.designer.cs">
+      <DependentUpon>202312271530515_tokendb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +79,7 @@
     <Compile Include="Repo\ProductRepo.cs" />
     <Compile Include="Repo\Repos.cs" />
     <Compile Include="Repo\SellerRepo.cs" />
+    <Compile Include="Repo\TokenRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -82,6 +88,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202312271142432_dbinit.resx">
       <DependentUpon>202312271142432_dbinit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312271530515_tokendb.resx">
+      <DependentUpon>202312271530515_tokendb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

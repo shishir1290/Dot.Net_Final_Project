@@ -35,5 +35,10 @@ namespace DAL
         {
             return new BuyerRepo();
         }
+
+        public static IRepo<Token, string, Token> TokenData()
+        {
+               return new TokenRepo();
+        }
     }
 }

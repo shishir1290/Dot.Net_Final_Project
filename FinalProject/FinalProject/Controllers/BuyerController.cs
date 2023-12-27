@@ -103,20 +103,5 @@ namespace FinalProject.Controllers
             }
         }
 
-
-        [HttpGet]
-        [Route("api/buyer/check")]
-        public HttpResponseMessage Check()
-        {
-            try
-            {
-                var data = BuyerService.GetLoggedInUser();
-                return Request.CreateResponse(HttpStatusCode.OK, data);
-            }
-            catch (Exception ex)
-            {
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
-            }   
-        }
     }
 }

@@ -18,7 +18,7 @@ namespace FinalProject.Controllers
         {
             try
             {
-                var res = AuthService.Authenticate(login.Email, login.Password);
+                var res = AuthService.Authenticate(login.EmailAddress, login.Password);
                 if(res != null)
                 {
                     
