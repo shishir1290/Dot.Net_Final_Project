@@ -8,8 +8,10 @@ using System.Threading.Tasks;
 
 namespace DAL.Repo
 {
-    internal class ProductRepo : Repos, IRepo<Products, int, Products>
+
+    internal class ProductsRepo : Repos, IRepo<Products, int, Products>
     {
+
         public Products Create(Products obj)
         {
             db.Products.Add(obj);
@@ -26,8 +28,6 @@ namespace DAL.Repo
         }
 
         /*-------------------------------------------------------------------------------------*/
-
-        
 
         /*-------------------------------------------------------------------------------------*/
 
@@ -49,6 +49,7 @@ namespace DAL.Repo
             if (db.SaveChanges() > 0)
                 return obj;
             return null;
+
         }
     }
 }

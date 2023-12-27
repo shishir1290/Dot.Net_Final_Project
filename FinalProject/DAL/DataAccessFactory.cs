@@ -18,7 +18,7 @@ namespace DAL
 
         public static IRepo<Products, int, Products> ProductData()
         {
-            return new ProductRepo();
+            return new ProductsRepo();
         }
 
         public static IRepo<Order, int, Order> OrderData()
