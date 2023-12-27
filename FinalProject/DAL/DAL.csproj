@@ -55,19 +55,17 @@
     <Compile Include="EF\EContext.cs" />
     <Compile Include="EF\Model\Brand.cs" />
     <Compile Include="EF\Model\Buyer.cs" />
+    <Compile Include="EF\Model\Cart.cs" />
     <Compile Include="EF\Model\Category.cs" />
     <Compile Include="EF\Model\Order.cs" />
     <Compile Include="EF\Model\Products.cs" />
-    <Compile Include="EF\Model\Seller.cs" />
+    <Compile Include="EF\Model\Review.cs" />
+    <Compile Include="EF\Model\Sellers.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202312251217119_initDB.cs" />
-    <Compile Include="Migrations\202312251217119_initDB.designer.cs">
-      <DependentUpon>202312251217119_initDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312270728327_dbinit.cs" />
-    <Compile Include="Migrations\202312270728327_dbinit.designer.cs">
-      <DependentUpon>202312270728327_dbinit.cs</DependentUpon>
+    <Compile Include="Migrations\202312271142432_dbinit.cs" />
+    <Compile Include="Migrations\202312271142432_dbinit.designer.cs">
+      <DependentUpon>202312271142432_dbinit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,11 +79,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202312251217119_initDB.resx">
-      <DependentUpon>202312251217119_initDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312270728327_dbinit.resx">
-      <DependentUpon>202312270728327_dbinit.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202312271142432_dbinit.resx">
+      <DependentUpon>202312271142432_dbinit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

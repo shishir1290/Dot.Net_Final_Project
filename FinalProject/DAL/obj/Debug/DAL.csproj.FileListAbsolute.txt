@@ -35,9 +35,6 @@ C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\En
 C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\EntityFramework.xml
 C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.initDB.resources
-C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit.resources
-C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.dll
@@ -57,3 +54,5 @@ C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject
 C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.dll
 C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.pdb
+C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit.resources
+C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

@@ -14,7 +14,9 @@ namespace DAL.EF
         public DbSet<Model.Order> Orders { get; set; }
         public DbSet<Model.Brand> Brands { get; set; }
         public DbSet<Model.Category> Categories { get; set; }
-        public DbSet<Model.Seller> Sellers { get; set; }
+        public DbSet<Model.Sellers> Sellers { get; set; }
+        public DbSet<Model.Review> Reviews { get; set; }
+        public DbSet<Model.Cart> Carts { get; set; }
 
     }
 }
