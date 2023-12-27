@@ -47,7 +47,6 @@ C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject
 C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\EntityFramework.xml
 C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.initDB.resources
 C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit.resources
 C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache

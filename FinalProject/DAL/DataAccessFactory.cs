@@ -26,6 +26,11 @@ namespace DAL
             return new OrderRepo();
         }
 
+        public static IRepo<Sellers, int, Sellers> SellersData()
+        {
+            return new SellerRepo();
+        }
+
         public static IAuth<Buyer> AuthData()
         {
             return new BuyerRepo();
