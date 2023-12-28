@@ -74,7 +74,9 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repo\BrandRepo.cs" />
     <Compile Include="Repo\BuyerRepo.cs" />
+    <Compile Include="Repo\CategoryRepo.cs" />
     <Compile Include="Repo\OrderRepo.cs" />
     <Compile Include="Repo\ProductsRepo.cs" />
     <Compile Include="Repo\Repos.cs" />

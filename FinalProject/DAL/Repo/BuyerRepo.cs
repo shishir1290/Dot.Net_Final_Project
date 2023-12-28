@@ -35,14 +35,14 @@ namespace DAL.Repo
             return db.SaveChanges() > 0;
         }
 
-        public Buyer Login(Buyer obj)
+        /*public Buyer Login(Buyer obj)
         {
             var ex = db.Buyers.Where(b => b.EmailAddress == obj.EmailAddress && b.Password == obj.Password).FirstOrDefault();
-            if(ex != null)
+            if (ex != null)
                 return ex;
             return null;
 
-        }
+        }*/
 
         public List<Buyer> Read()
         {

@@ -16,7 +16,7 @@ namespace DAL
             return new BuyerRepo();
         }
 
-        public static IRepo<Products, int, Products> ProductData()
+        public static IRepo<Products, int, Products> ProductsData()
         {
             return new ProductsRepo();
         }
@@ -39,6 +39,16 @@ namespace DAL
         public static IRepo<Token, string, Token> TokenData()
         {
                return new TokenRepo();
+        }
+
+        public static IRepo<Brand, int, Brand> BrandData()
+        {
+            return new BrandRepo();
+        }
+
+        public static IRepo<Category, int, Category> CategoryData()
+        {
+            return new CategoryRepo();
         }
     }
 }
