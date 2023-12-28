@@ -14,6 +14,7 @@ namespace BLL.Services
     {
         public static BrandDTO Create(BrandDTO brand)
         {
+            brand.CreatedAt = DateTime.Now;
             var cfg = new MapperConfiguration(c =>
             {
                 c.CreateMap<BrandDTO, Brand>();

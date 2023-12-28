@@ -14,6 +14,7 @@ namespace BLL.Services
     {
         public static CategoryDTO Create(CategoryDTO category)
         {
+            category.CreatedAt = DateTime.Now;
             var cfg = new MapperConfiguration(c => c.CreateMap<CategoryDTO, Category>());
             var mapper = new Mapper(cfg);
             var mapped = mapper.Map<Category>(category);
