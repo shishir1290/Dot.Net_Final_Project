@@ -72,6 +72,10 @@
     <Compile Include="Migrations\202312271530515_tokendb.designer.cs">
       <DependentUpon>202312271530515_tokendb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312280103462_branddb.cs" />
+    <Compile Include="Migrations\202312280103462_branddb.designer.cs">
+      <DependentUpon>202312280103462_branddb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\BrandRepo.cs" />
@@ -93,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312271530515_tokendb.resx">
       <DependentUpon>202312271530515_tokendb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312280103462_branddb.resx">
+      <DependentUpon>202312280103462_branddb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

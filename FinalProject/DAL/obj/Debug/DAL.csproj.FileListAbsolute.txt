@@ -57,3 +57,4 @@ C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DA
 C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.tokendb.resources
 C:\Users\st282\OneDrive\Desktop\AAAAAAAAA.net\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.tokendb.resources
+C:\Users\shishir1290\Desktop\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.branddb.resources
