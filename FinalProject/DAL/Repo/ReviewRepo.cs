@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repo
 {
-    internal class ReviewRepo : Repos, IRepo<Review, string, Review>
+    internal class ReviewRepo : Repos, IRepo<Review, int, Review>
     {
         public Review Create(Review obj)
         {
@@ -18,7 +18,7 @@ namespace DAL.Repo
             return null;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var ex = Read(id);
             db.Reviews.Remove(ex);
@@ -30,12 +30,12 @@ namespace DAL.Repo
             return db.Reviews.ToList();
         }
 
-        public Review Read(string id)
+        public Review Read(int id)
         {
             return db.Reviews.Find(id);
         }
 
-        public Review Update(Review obj, string id)
+        public Review Update(Review obj, int id)
         {
             var ex = Read(id);
             if(ex != null)

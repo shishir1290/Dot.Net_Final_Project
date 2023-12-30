@@ -12,7 +12,7 @@ namespace BLL.Services
 {
     public class ReviewService
     {
-        public static ReviewDTO create(Review obj)
+        public static ReviewDTO Create(ReviewDTO obj)
         {
             var cfg = new MapperConfiguration(c =>
             {
@@ -31,7 +31,7 @@ namespace BLL.Services
             return mapped2;
         }
 
-        public static ReviewDTO Get(string id)
+        public static ReviewDTO Get(int id)
         {
             var data = DataAccessFactory.ReviewData().Read(id);
             var cfg = new MapperConfiguration(c =>
@@ -55,7 +55,7 @@ namespace BLL.Services
             return mapped;
         }
 
-        public static ReviewDTO Update(Review obj, string id)
+        public static ReviewDTO Update(Review obj, int id)
         {
             var cfg = new MapperConfiguration(c =>
             {
@@ -74,7 +74,7 @@ namespace BLL.Services
             return mapped2;
         }
 
-        public static bool Delete(string id)
+        public static bool Delete(int id)
         {
             return DataAccessFactory.ReviewData().Delete(id);
         }

@@ -51,7 +51,7 @@ namespace DAL
             return new CategoryRepo();
         }
 
-        public static IRepo<Review, string, Review> ReviewData()
+        public static IRepo<Review, int, Review> ReviewData()
         {
             return new ReviewRepo();
         }
