@@ -20,10 +20,21 @@ namespace DAL.EF.Model
         public int CategoryId { get; set; }
         [ForeignKey("Brand")]
         public int BrandId { get; set; }
-        /*[ForeignKey("Seller")]
-        public int SellerId { get; set; }*/
+        [ForeignKey("Seller")]
+        public int SellerId { get; set; }
 
         public virtual Category Category { get; set; }
         public virtual Brand Brand { get; set; }
+
+        public virtual Sellers Seller { get; set; }
+
+        [ForeignKey("Review")]
+        public int ReviewId { get; set; }
+        public virtual ICollection<Review> Review { get; set; }
+
+        public Products()
+        {
+            Review = new List<Review>();
+        }
     }
 }

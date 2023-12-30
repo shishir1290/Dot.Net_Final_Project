@@ -93,6 +93,7 @@
     <Compile Include="Repo\OrderRepo.cs" />
     <Compile Include="Repo\ProductsRepo.cs" />
     <Compile Include="Repo\Repos.cs" />
+    <Compile Include="Repo\ReviewRepo.cs" />
     <Compile Include="Repo\SellerRepo.cs" />
     <Compile Include="Repo\SendMailRepo.cs" />
     <Compile Include="Repo\TokenRepo.cs" />

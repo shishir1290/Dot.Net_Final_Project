@@ -51,6 +51,7 @@
     <Compile Include="DTOs\CategoryDTO.cs" />
     <Compile Include="DTOs\OrderDTO.cs" />
     <Compile Include="DTOs\ProductsDTO.cs" />
+    <Compile Include="DTOs\ReviewDTO.cs" />
     <Compile Include="DTOs\SellerDTO.cs" />
     <Compile Include="DTOs\TokenDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Services\BuyerService.cs" />
     <Compile Include="Services\CategoryService.cs" />
     <Compile Include="Services\ProductsService.cs" />
+    <Compile Include="Services\ReviewService.cs" />
     <Compile Include="Services\SellerService.cs" />
     <Compile Include="Services\SendMailService.cs" />
   </ItemGroup>
