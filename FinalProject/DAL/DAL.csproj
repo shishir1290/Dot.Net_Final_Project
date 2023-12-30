@@ -62,6 +62,7 @@
     <Compile Include="EF\Model\Review.cs" />
     <Compile Include="EF\Model\Sellers.cs" />
     <Compile Include="EF\Model\Token.cs" />
+    <Compile Include="EF\Model\VerificationCode.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202312271142432_dbinit.cs" />
@@ -76,6 +77,14 @@
     <Compile Include="Migrations\202312280103462_branddb.designer.cs">
       <DependentUpon>202312280103462_branddb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312301100528_codeDb.cs" />
+    <Compile Include="Migrations\202312301100528_codeDb.designer.cs">
+      <DependentUpon>202312301100528_codeDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312301127133_codeDb1.cs" />
+    <Compile Include="Migrations\202312301127133_codeDb1.designer.cs">
+      <DependentUpon>202312301127133_codeDb1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\BrandRepo.cs" />
@@ -85,6 +94,7 @@
     <Compile Include="Repo\ProductsRepo.cs" />
     <Compile Include="Repo\Repos.cs" />
     <Compile Include="Repo\SellerRepo.cs" />
+    <Compile Include="Repo\SendMailRepo.cs" />
     <Compile Include="Repo\TokenRepo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +110,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312280103462_branddb.resx">
       <DependentUpon>202312280103462_branddb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312301100528_codeDb.resx">
+      <DependentUpon>202312301100528_codeDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312301127133_codeDb1.resx">
+      <DependentUpon>202312301127133_codeDb1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

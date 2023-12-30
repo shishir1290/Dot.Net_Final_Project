@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using System.Net.Mail;
+using System.Net;
 
 namespace BLL.Services
 {
@@ -45,25 +47,44 @@ namespace BLL.Services
 
         public static BuyerDTO Create(BuyerDTO buyer)
         {
-            var cfg = new MapperConfiguration(c =>
+            if (buyer != null)
             {
-                c.CreateMap<BuyerDTO, Buyer>();
-            });
-            var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<Buyer>(buyer);
-            var data = DataAccessFactory.BuyerData().Create(mapped);
+                /*Send mail*/
+                var mail = SendMailService.SendMail(buyer.EmailAddress);
+                if(mail != null)
+                {
+                    Console.WriteLine("Email sent");
+                    var cfg = new MapperConfiguration(c =>
+                    {
+                        c.CreateMap<BuyerDTO, Buyer>();
+                    });
+                    var mapper = new Mapper(cfg);
+                    var mapped = mapper.Map<Buyer>(buyer);
+                    var data = DataAccessFactory.BuyerData().Create(mapped);
 
-            var cfg2 = new MapperConfiguration(c =>
-            {
-                c.CreateMap<Buyer, BuyerDTO>();
-            });
-            var mapper2 = new Mapper(cfg2);
-            var mapped2 = mapper2.Map<BuyerDTO>(data);
-            return mapped2;
+                    var cfg2 = new MapperConfiguration(c =>
+                    {
+                        c.CreateMap<Buyer, BuyerDTO>();
+                    });
+                    var mapper2 = new Mapper(cfg2);
+                    var mapped2 = mapper2.Map<BuyerDTO>(data);
+                    return mapped2;
+                }
+                else
+                {
+                    Console.WriteLine("Email not sent");
+                    return null;
+                }
+
+            }
+            return null;
+            
         }
 
+
+
         /*------------------------------------------------------------------------------------------------*/
-                                            /*Login part*/
+        /*Login part*/
         /*------------------------------------------------------------------------------------------------*/
 
         public static BuyerDTO Login(BuyerDTO buyer)

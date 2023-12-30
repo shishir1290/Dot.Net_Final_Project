@@ -21,7 +21,9 @@ namespace DAL.Repo
 
         public bool Delete(string id)
         {
-            throw new NotImplementedException();
+            var ex = Read(id);
+            db.Tokens.Remove(ex);
+            return db.SaveChanges() > 0;
         }
 
         public List<Token> Read()
@@ -29,18 +31,23 @@ namespace DAL.Repo
             throw new NotImplementedException();
         }
 
-        public Token Read(string id)
+        public Token Read(string email)
         {
-            return db.Tokens.FirstOrDefault(t => t.TokenString.Equals(id));
+            return db.Tokens.FirstOrDefault(t => t.BuyerId.Equals(email));
 
         }
 
-        public Token Update(Token obj, string id)
+
+        public Token Update(Token obj, string email)
         {
-            var token = Read(obj.TokenString);
-            db.Entry(token).CurrentValues.SetValues(obj);
-            if(db.SaveChanges() > 0)
-                return token;
+            var token = Read(email);
+            if(token != null)
+            {
+                db.Entry(token).CurrentValues.SetValues(obj);
+                if(db.SaveChanges() > 0)
+                    return token;
+            }
+            
             return null;
         }
     }
