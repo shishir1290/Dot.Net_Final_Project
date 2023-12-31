@@ -78,17 +78,22 @@ namespace DAL.Repo
 
         /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-        public object SearchByCategory(int categoryId)
+        public List<Buyer> SearchByCategory(int categoryId)
         {
             throw new NotImplementedException();
         }
 
-        public object SearchByName(string name)
+        public List<Buyer> SearchByName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public object SearchByBrand(int brandId)
+        public List<Buyer> SearchByBrand(int brandId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Buyer ReadToken(string tokenString)
         {
             throw new NotImplementedException();
         }

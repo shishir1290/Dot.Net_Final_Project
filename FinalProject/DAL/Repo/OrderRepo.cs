@@ -12,6 +12,9 @@ namespace DAL.Repo
     {
         public Order Create(Order obj)
         {
+            obj.OrderDate = DateTime.Now;
+            obj.Status = "Pending";
+            
             db.Orders.Add(obj);
             if (db.SaveChanges() > 0)
                 return obj;
@@ -38,8 +41,9 @@ namespace DAL.Repo
 
         public Order Read(int id)
         {
-            return db.Orders.Find(id);
+            return db.Orders.FirstOrDefault(p => p.BuyerId == id);
         }
+
 
         public Order Update(Order obj, int id)
         {
@@ -50,17 +54,22 @@ namespace DAL.Repo
 
         /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-        public object SearchByCategory(int categoryId)
+        public List<Order> SearchByCategory(int categoryId)
         {
             throw new NotImplementedException();
         }
 
-        public object SearchByName(string name)
+        public List<Order> SearchByName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public object SearchByBrand(int brandId)
+        public List<Order> SearchByBrand(int brandId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Order ReadToken(string tokenString)
         {
             throw new NotImplementedException();
         }

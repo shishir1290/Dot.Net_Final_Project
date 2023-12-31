@@ -19,6 +19,7 @@ namespace DAL.EF.Model
         public int ProductId { get; set; }
         [Required]
         public int Quantity { get; set; }
+        public double TotalPrice { get; set; }
         public DateTime OrderDate { get; set; }
         [Required]
         public string Status { get; set; }

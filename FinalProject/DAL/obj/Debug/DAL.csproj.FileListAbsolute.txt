@@ -91,3 +91,6 @@ C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\D
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit1.resources
 C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit1.resources
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.init.resources
+C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit2.resources
+C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit3.resources
+C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit4.resources

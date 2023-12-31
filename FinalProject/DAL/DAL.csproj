@@ -77,6 +77,18 @@
     <Compile Include="Migrations\202312311449331_init.designer.cs">
       <DependentUpon>202312311449331_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312311809333_dbinit2.cs" />
+    <Compile Include="Migrations\202312311809333_dbinit2.designer.cs">
+      <DependentUpon>202312311809333_dbinit2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312311902232_dbinit3.cs" />
+    <Compile Include="Migrations\202312311902232_dbinit3.designer.cs">
+      <DependentUpon>202312311902232_dbinit3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312311938448_dbinit4.cs" />
+    <Compile Include="Migrations\202312311938448_dbinit4.designer.cs">
+      <DependentUpon>202312311938448_dbinit4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\BrandRepo.cs" />
@@ -103,6 +115,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312311449331_init.resx">
       <DependentUpon>202312311449331_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312311809333_dbinit2.resx">
+      <DependentUpon>202312311809333_dbinit2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312311902232_dbinit3.resx">
+      <DependentUpon>202312311902232_dbinit3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312311938448_dbinit4.resx">
+      <DependentUpon>202312311938448_dbinit4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

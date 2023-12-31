@@ -107,7 +107,7 @@ namespace BLL.Services
 
         /*----------------------------------------------------------------------------------------------*/
         /*----------------------------------------------------------------------------------------------*/
-        public static ProductsDTO Search(string name)
+        public static List<ProductsDTO> Search(string name)
         {
             var data = DataAccessFactory.ProductsData().SearchByName(name);
             var cfg = new MapperConfiguration(c =>
@@ -115,14 +115,14 @@ namespace BLL.Services
                 c.CreateMap<Products, ProductsDTO>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<ProductsDTO>(data);
+            var mapped = mapper.Map<List<ProductsDTO>>(data);
             return mapped;
         }
 
         /*----------------------------------------------------------------------------------------------*/
         /*----------------------------------------------------------------------------------------------*/
 
-        public static ProductsDTO SearchByCategory(int categoryId)
+        public static List<ProductsDTO> SearchByCategory(int categoryId)
         {
             var data = DataAccessFactory.ProductsData().SearchByCategory(categoryId);
             var cfg = new MapperConfiguration(c =>
@@ -130,7 +130,7 @@ namespace BLL.Services
                 c.CreateMap<Products, ProductsDTO>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<ProductsDTO>(data);
+            var mapped = mapper.Map<List<ProductsDTO>>(data);
             return mapped;
         }
 
@@ -139,7 +139,7 @@ namespace BLL.Services
         /*----------------------------------------------------------------------------------------------*/
         /*----------------------------------------------------------------------------------------------*/
 
-        public static ProductsDTO SearchByBrand(int brandId)
+        public static List<ProductsDTO> SearchByBrand(int brandId)
         {
             var data = DataAccessFactory.ProductsData().SearchByBrand(brandId);
             var cfg = new MapperConfiguration(c =>
@@ -147,7 +147,7 @@ namespace BLL.Services
                 c.CreateMap<Products, ProductsDTO>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<ProductsDTO>(data);
+            var mapped = mapper.Map<List<ProductsDTO>>(data);
             return mapped;
         }
     }

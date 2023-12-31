@@ -16,9 +16,9 @@ namespace DAL.EF.Model
         public DateTime CreateDate { get; set; }
         public DateTime? ExpireDate { get; set; }
         [ForeignKey("Buyer")]
-        public string BuyerId { get; set; }
+        public int BuyerId { get; set; }
         [ForeignKey("Seller")]
-        public string SellerId { get; set; }
+        public int SellerId { get; set; }
         public virtual ICollection<Buyer> Buyer { get; set; }
         public virtual ICollection<Sellers> Seller { get; set; }
 

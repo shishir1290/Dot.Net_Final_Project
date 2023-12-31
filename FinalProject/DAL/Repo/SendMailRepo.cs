@@ -50,17 +50,22 @@ namespace DAL.Repo
 
         /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-        public object SearchByCategory(int categoryId)
+        public List<VerificationCode> SearchByCategory(int categoryId)
         {
             throw new NotImplementedException();
         }
 
-        public object SearchByName(string name)
+        public List<VerificationCode> SearchByName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public object SearchByBrand(int brandId)
+        public List<VerificationCode> SearchByBrand(int brandId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public VerificationCode ReadToken(string tokenString)
         {
             throw new NotImplementedException();
         }

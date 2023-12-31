@@ -9,7 +9,7 @@ using System.Web;
 
 namespace DAL.Repo
 {
-    internal class TokenRepo : Repos, IRepo<Token, string, Token>
+    internal class TokenRepo : Repos, IRepo<Token, int, Token>
     {
         public Token Create(Token obj)
         {
@@ -19,7 +19,7 @@ namespace DAL.Repo
             return null;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var ex = Read(id);
             db.Tokens.Remove(ex);
@@ -31,16 +31,21 @@ namespace DAL.Repo
             throw new NotImplementedException();
         }
 
-        public Token Read(string email)
+        public Token Read(int id)
         {
-            return db.Tokens.FirstOrDefault(t => t.BuyerId.Equals(email));
+            return db.Tokens.FirstOrDefault(t => t.BuyerId.Equals(id));
 
         }
 
-
-        public Token Update(Token obj, string email)
+        public Token ReadToken(string Token)
         {
-            var token = Read(email);
+            return db.Tokens.FirstOrDefault(t => t.TokenString.Equals(Token));
+        }
+
+
+        public Token Update(Token obj, int id)
+        {
+            var token = Read(id);
             if(token != null)
             {
                 db.Entry(token).CurrentValues.SetValues(obj);
@@ -53,17 +58,17 @@ namespace DAL.Repo
 
         /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-        public object SearchByCategory(int categoryId)
+        public List<Token> SearchByCategory(int categoryId)
         {
             throw new NotImplementedException();
         }
 
-        public object SearchByName(string name)
+        public List<Token> SearchByName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public object SearchByBrand(int brandId)
+        public List<Token> SearchByBrand(int brandId)
         {
             throw new NotImplementedException();
         }

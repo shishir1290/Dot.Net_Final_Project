@@ -60,10 +60,12 @@
     <Compile Include="Services\BrandService.cs" />
     <Compile Include="Services\BuyerService.cs" />
     <Compile Include="Services\CategoryService.cs" />
+    <Compile Include="Services\OrderService.cs" />
     <Compile Include="Services\ProductsService.cs" />
     <Compile Include="Services\ReviewService.cs" />
     <Compile Include="Services\SellerService.cs" />
     <Compile Include="Services\SendMailService.cs" />
+    <Compile Include="Services\TokenService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

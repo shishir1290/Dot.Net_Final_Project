@@ -11,18 +11,19 @@ namespace BLL.Services
         public static TokenDTO Authenticate(string email, string password)
         {
             var authenticationResult = DataAccessFactory.AuthData().Authenticate(email, password);
+            var id = authenticationResult.Id;
 
             if (authenticationResult != null)
             {
-                Token token = DataAccessFactory.TokenData().Read(email);
+                Token token = DataAccessFactory.TokenData().Read(id);
 
                 if (token != null)
                 {
-                    UpdateToken(token, email);
+                    UpdateToken(token, id);
                 }
                 else
                 {
-                    token = CreateToken(email);
+                    token = CreateToken(id);
                 }
 
                 if (token != null)
@@ -35,21 +36,21 @@ namespace BLL.Services
             return null;
         }
 
-        private static void UpdateToken(Token token, string email)
+        private static void UpdateToken(Token token, int id)
         {
             token.CreateDate = DateTime.Now;
             token.ExpireDate = DateTime.Now.AddMinutes(1);
             token.TokenString = Guid.NewGuid().ToString();
-            var updatedToken = DataAccessFactory.TokenData().Update(token, email);
+            var updatedToken = DataAccessFactory.TokenData().Update(token, id);
             // You may want to add additional error handling logic here if needed
         }
 
-        private static Token CreateToken(string email)
+        private static Token CreateToken(int id)
         {
             var token = new Token
             {
-                BuyerId = email,
-                SellerId = email,
+                BuyerId = id,
+                SellerId = id,
                 CreateDate = DateTime.Now,
                 ExpireDate = DateTime.Now.AddMinutes(1),
                 TokenString = Guid.NewGuid().ToString()
