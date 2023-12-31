@@ -89,3 +89,4 @@ C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalPro
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit.resources
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit1.resources
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit1.resources

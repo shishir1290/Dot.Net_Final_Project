@@ -12,7 +12,9 @@ namespace DAL.EF.Model
     {
         [Key]
         public int Id { get; set; }
+        [Required]
         public string CategoryName { get; set; }
+        [Required]
         public string CategoryDescription { get; set; }
         public DateTime CreatedAt { get; set; }
         
