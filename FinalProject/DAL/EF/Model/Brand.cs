@@ -12,8 +12,10 @@ namespace DAL.EF.Model
     {
         [Key]
         public int Id { get; set; }
+        [Required]
         public string BrandName { get; set; }
         public DateTime CreatedAt { get; set; }
+        [Required]
         public string BrandDescription { get; set; }
         
     }

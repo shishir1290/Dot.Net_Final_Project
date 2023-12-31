@@ -12,6 +12,7 @@ namespace DAL.EF.Model
         public int Id { get; set; }
         public string Comment { get; set; }
         public int Rating { get; set; }
+        public string Reply { get; set; }
         public DateTime Date { get; set; }
         [ForeignKey("Buyer")]
         public int BuyerId { get; set; }

@@ -45,10 +45,19 @@ namespace DAL.Repo
 
         public Products Update(Products obj, int id)
         {
-            var ex = Read(obj.Id);
-            db.Entry(ex).CurrentValues.SetValues(obj);
+            var ex = Read(id);
+            if(ex != null)
+            {
+                ex.ProductName = obj.ProductName;
+                ex.Price = obj.Price;
+                ex.Description = obj.Description;
+                ex.CategoryId = obj.CategoryId;
+                ex.BrandId = obj.BrandId;
+                ex.Quantity = obj.Quantity;
+                return ex;
+            }
             if (db.SaveChanges() > 0)
-                return obj;
+                return ex;
             return null;
 
         }
