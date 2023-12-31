@@ -50,5 +50,25 @@ namespace DAL.Repo
             }
             return null;
         }
+
+        /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+        public object SearchByCategory(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object SearchByName(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object SearchByBrand(int brandId)
+        {
+            throw new NotImplementedException();
+        }
+
+        /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
     }
 }

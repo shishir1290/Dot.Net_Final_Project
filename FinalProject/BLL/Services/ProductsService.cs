@@ -104,5 +104,51 @@ namespace BLL.Services
             var mapped = mapper.Map<ProductsDTO>(existing);
             return mapped;
         }
+
+        /*----------------------------------------------------------------------------------------------*/
+        /*----------------------------------------------------------------------------------------------*/
+        public static ProductsDTO Search(string name)
+        {
+            var data = DataAccessFactory.ProductsData().SearchByName(name);
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Products, ProductsDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<ProductsDTO>(data);
+            return mapped;
+        }
+
+        /*----------------------------------------------------------------------------------------------*/
+        /*----------------------------------------------------------------------------------------------*/
+
+        public static ProductsDTO SearchByCategory(int categoryId)
+        {
+            var data = DataAccessFactory.ProductsData().SearchByCategory(categoryId);
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Products, ProductsDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<ProductsDTO>(data);
+            return mapped;
+        }
+
+
+
+        /*----------------------------------------------------------------------------------------------*/
+        /*----------------------------------------------------------------------------------------------*/
+
+        public static ProductsDTO SearchByBrand(int brandId)
+        {
+            var data = DataAccessFactory.ProductsData().SearchByBrand(brandId);
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Products, ProductsDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<ProductsDTO>(data);
+            return mapped;
+        }
     }
 }

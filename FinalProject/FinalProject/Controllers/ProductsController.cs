@@ -87,6 +87,57 @@ namespace FinalProject.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+
+
+        [HttpGet]
+        [Route("api/products/search/{name}")]
+        public HttpResponseMessage Search(string name)
+        {
+            try
+            {
+                var data = ProductsService.Search(name);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+
+        [HttpGet]
+        [Route("api/products/searchbycategory/{categoryId}")]
+        public HttpResponseMessage SearchByCategory(int categoryId)
+        {
+            try
+            {
+                var data = ProductsService.SearchByCategory(categoryId);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+
+        }
+
+
+        [HttpGet]
+        [Route("api/products/searchbybrand/{brandId}")]
+        public HttpResponseMessage SearchByBrand(int brandId)
+        {
+            try
+            {
+                var data = ProductsService.SearchByBrand(brandId);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+
+            }
+        }
+
     }
 }
 

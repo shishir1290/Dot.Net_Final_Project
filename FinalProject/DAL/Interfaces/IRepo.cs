@@ -13,5 +13,8 @@ namespace DAL.Interfaces
         Type Read(ID id);
         RET Update(Type obj, ID id);
         bool Delete(ID id);
+        object SearchByName(string name);
+        object SearchByCategory(int categoryId);
+        object SearchByBrand(int brandId);
     }
 }

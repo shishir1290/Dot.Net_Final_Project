@@ -38,6 +38,28 @@ namespace DAL.Repo
             return brand;
         }
 
+        
+
+        /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+        public object SearchByCategory(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object SearchByName(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object SearchByBrand(int brandId)
+        {
+            throw new NotImplementedException();
+        }
+
+        /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+       
+        
         public Brand Update(Brand obj, int id)
         {
             var brand = Read(id);

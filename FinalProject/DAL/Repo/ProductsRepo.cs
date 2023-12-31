@@ -42,6 +42,7 @@ namespace DAL.Repo
             return db.Products.Find(id);
         }
 
+
         public Products Update(Products obj, int id)
         {
             var ex = Read(obj.Id);
@@ -50,6 +51,22 @@ namespace DAL.Repo
                 return obj;
             return null;
 
+        }
+
+        object IRepo<Products, int, Products>.SearchByName(string name)
+        {
+            return db.Products.Where(p => p.ProductName == name).ToList();
+        }
+
+
+        object IRepo<Products, int, Products>.SearchByCategory(int categoryId)
+        {
+            return db.Products.Where(p => p.CategoryId == categoryId).ToList();
+        }
+
+        object IRepo<Products, int, Products>.SearchByBrand(int brandId)
+        {
+            return db.Products.Where(p => p.BrandId == brandId).ToList();
         }
     }
 }
