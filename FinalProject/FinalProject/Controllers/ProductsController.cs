@@ -2,9 +2,12 @@
 using BLL.Services;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web;
 using System.Web.Http;
 
 namespace FinalProject.Controllers
@@ -13,11 +16,46 @@ namespace FinalProject.Controllers
     {
         [HttpPost]
         [Route("api/products/create")]
-        public HttpResponseMessage Create(ProductsDTO product)
+        public async Task<HttpResponseMessage> Create()
         {
             try
             {
-                var data = ProductsService.Create(product);
+                // Check if the request contains multipart/form-data
+                if (!Request.Content.IsMimeMultipartContent())
+                {
+                    throw new HttpResponseException(HttpStatusCode.UnsupportedMediaType);
+                }
+
+                // Create a stream provider for setting up output streams
+                var streamProvider = new MultipartFormDataStreamProvider(HttpContext.Current.Server.MapPath("~/Uploads/"));
+
+                // Read the MIME multipart content using the stream provider
+                await Request.Content.ReadAsMultipartAsync(streamProvider);
+
+                // Get other form data from the request
+                var formData = streamProvider.FormData;
+                var productDTO = new ProductsDTO
+                {
+                    ProductName = formData["ProductName"],
+                    Price = int.Parse(formData["Price"]),
+                    Quantity = int.Parse(formData["Quantity"]),
+                    Description = formData["Description"],
+                    CategoryId = int.Parse(formData["CategoryId"]),
+                    BrandId = int.Parse(formData["BrandId"]),
+                    SellerId = int.Parse(formData["SellerId"])
+                };
+
+                // Get the file data from the stream provider
+                var fileData = streamProvider.FileData.FirstOrDefault();
+                if (fileData != null)
+                {
+                    // Instead of FileInfo, use HttpPostedFileBase
+                    productDTO.ImageFile = new HttpPostedFileWrapper(HttpContext.Current.Request.Files[0]);
+                }
+
+                // Call the service method
+                var data = ProductsService.Create(productDTO);
+
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -25,6 +63,11 @@ namespace FinalProject.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
+
+
+
+        /*---------------------------------------------------------------------------------------------------------------*/
+
 
         [HttpGet]
         [Route("api/products/{id}")]
