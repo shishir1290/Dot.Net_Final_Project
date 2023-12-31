@@ -85,10 +85,6 @@
     <Compile Include="Migrations\202312301127133_codeDb1.designer.cs">
       <DependentUpon>202312301127133_codeDb1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312310717016_dbinit1.cs" />
-    <Compile Include="Migrations\202312310717016_dbinit1.designer.cs">
-      <DependentUpon>202312310717016_dbinit1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\BrandRepo.cs" />
@@ -121,9 +117,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312301127133_codeDb1.resx">
       <DependentUpon>202312301127133_codeDb1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312310717016_dbinit1.resx">
-      <DependentUpon>202312310717016_dbinit1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
