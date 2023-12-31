@@ -28,13 +28,6 @@ namespace DAL.EF.Model
 
         public virtual Sellers Seller { get; set; }
 
-        /*[ForeignKey("Review")]
-        public int ReviewId { get; set; }*/
-        /*public virtual ICollection<Review> Review { get; set; }
-
-        public Products()
-        {
-            Review = new List<Review>();
-        }*/
+       
     }
 }

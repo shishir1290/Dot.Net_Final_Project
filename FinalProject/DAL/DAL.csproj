@@ -65,33 +65,9 @@
     <Compile Include="EF\Model\VerificationCode.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202312271142432_dbinit.cs" />
-    <Compile Include="Migrations\202312271142432_dbinit.designer.cs">
-      <DependentUpon>202312271142432_dbinit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312271530515_tokendb.cs" />
-    <Compile Include="Migrations\202312271530515_tokendb.designer.cs">
-      <DependentUpon>202312271530515_tokendb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312280103462_branddb.cs" />
-    <Compile Include="Migrations\202312280103462_branddb.designer.cs">
-      <DependentUpon>202312280103462_branddb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312301100528_codeDb.cs" />
-    <Compile Include="Migrations\202312301100528_codeDb.designer.cs">
-      <DependentUpon>202312301100528_codeDb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312301127133_codeDb1.cs" />
-    <Compile Include="Migrations\202312301127133_codeDb1.designer.cs">
-      <DependentUpon>202312301127133_codeDb1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312310751332_dbinit1.cs" />
-    <Compile Include="Migrations\202312310751332_dbinit1.designer.cs">
-      <DependentUpon>202312310751332_dbinit1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312310828322_dbinit2.cs" />
-    <Compile Include="Migrations\202312310828322_dbinit2.designer.cs">
-      <DependentUpon>202312310828322_dbinit2.cs</DependentUpon>
+    <Compile Include="Migrations\202312310849005_dbinit.cs" />
+    <Compile Include="Migrations\202312310849005_dbinit.designer.cs">
+      <DependentUpon>202312310849005_dbinit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -111,26 +87,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202312271142432_dbinit.resx">
-      <DependentUpon>202312271142432_dbinit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312271530515_tokendb.resx">
-      <DependentUpon>202312271530515_tokendb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312280103462_branddb.resx">
-      <DependentUpon>202312280103462_branddb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312301100528_codeDb.resx">
-      <DependentUpon>202312301100528_codeDb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312301127133_codeDb1.resx">
-      <DependentUpon>202312301127133_codeDb1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312310751332_dbinit1.resx">
-      <DependentUpon>202312310751332_dbinit1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312310828322_dbinit2.resx">
-      <DependentUpon>202312310828322_dbinit2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202312310849005_dbinit.resx">
+      <DependentUpon>202312310849005_dbinit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
