@@ -78,3 +78,5 @@ C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\D
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.dll
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.pdb
+C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit1.resources
+C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit2.resources
