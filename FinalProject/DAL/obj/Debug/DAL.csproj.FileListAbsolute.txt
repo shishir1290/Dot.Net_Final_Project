@@ -80,3 +80,23 @@ C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\D
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.pdb
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit1.resources
 C:\Users\shishir1290\Desktop\dotnet\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit2.resources
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\DAL.dll.config
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\DAL.dll
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\DAL.pdb
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\EntityFramework.dll
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\EntityFramework.xml
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit.resources
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.tokendb.resources
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.branddb.resources
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.codeDb.resources
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.codeDb1.resources
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.202312310751332_dbinit1.resources
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.Migrations.dbinit2.resources
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.dll
+C:\Users\st282\OneDrive\Desktop\a dot net project\Dot.Net_Final_Project\FinalProject\DAL\obj\Debug\DAL.pdb
