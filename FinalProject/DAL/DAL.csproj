@@ -65,29 +65,37 @@
     <Compile Include="EF\Model\VerificationCode.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202312310849005_dbinit.cs" />
-    <Compile Include="Migrations\202312310849005_dbinit.designer.cs">
-      <DependentUpon>202312310849005_dbinit.cs</DependentUpon>
+    <Compile Include="Migrations\202401011337549_dbinit10.cs" />
+    <Compile Include="Migrations\202401011337549_dbinit10.designer.cs">
+      <DependentUpon>202401011337549_dbinit10.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312311402325_dbinit1.cs" />
-    <Compile Include="Migrations\202312311402325_dbinit1.designer.cs">
-      <DependentUpon>202312311402325_dbinit1.cs</DependentUpon>
+    <Compile Include="Migrations\202401011355150_dbinit11.cs" />
+    <Compile Include="Migrations\202401011355150_dbinit11.designer.cs">
+      <DependentUpon>202401011355150_dbinit11.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312311449331_init.cs" />
-    <Compile Include="Migrations\202312311449331_init.designer.cs">
-      <DependentUpon>202312311449331_init.cs</DependentUpon>
+    <Compile Include="Migrations\202401011359368_dbinit.cs" />
+    <Compile Include="Migrations\202401011359368_dbinit.designer.cs">
+      <DependentUpon>202401011359368_dbinit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312311809333_dbinit2.cs" />
-    <Compile Include="Migrations\202312311809333_dbinit2.designer.cs">
-      <DependentUpon>202312311809333_dbinit2.cs</DependentUpon>
+    <Compile Include="Migrations\202401011436473_dbinit1.cs" />
+    <Compile Include="Migrations\202401011436473_dbinit1.designer.cs">
+      <DependentUpon>202401011436473_dbinit1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312311902232_dbinit3.cs" />
-    <Compile Include="Migrations\202312311902232_dbinit3.designer.cs">
-      <DependentUpon>202312311902232_dbinit3.cs</DependentUpon>
+    <Compile Include="Migrations\202401011454320_dbinit2.cs" />
+    <Compile Include="Migrations\202401011454320_dbinit2.designer.cs">
+      <DependentUpon>202401011454320_dbinit2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312311938448_dbinit4.cs" />
-    <Compile Include="Migrations\202312311938448_dbinit4.designer.cs">
-      <DependentUpon>202312311938448_dbinit4.cs</DependentUpon>
+    <Compile Include="Migrations\202401011457263_dbinit3.cs" />
+    <Compile Include="Migrations\202401011457263_dbinit3.designer.cs">
+      <DependentUpon>202401011457263_dbinit3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202401011513599_dbinit4.cs" />
+    <Compile Include="Migrations\202401011513599_dbinit4.designer.cs">
+      <DependentUpon>202401011513599_dbinit4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202401011518100_dbinit5.cs" />
+    <Compile Include="Migrations\202401011518100_dbinit5.designer.cs">
+      <DependentUpon>202401011518100_dbinit5.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,23 +115,29 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202312310849005_dbinit.resx">
-      <DependentUpon>202312310849005_dbinit.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401011337549_dbinit10.resx">
+      <DependentUpon>202401011337549_dbinit10.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312311402325_dbinit1.resx">
-      <DependentUpon>202312311402325_dbinit1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401011355150_dbinit11.resx">
+      <DependentUpon>202401011355150_dbinit11.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312311449331_init.resx">
-      <DependentUpon>202312311449331_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401011359368_dbinit.resx">
+      <DependentUpon>202401011359368_dbinit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312311809333_dbinit2.resx">
-      <DependentUpon>202312311809333_dbinit2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401011436473_dbinit1.resx">
+      <DependentUpon>202401011436473_dbinit1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312311902232_dbinit3.resx">
-      <DependentUpon>202312311902232_dbinit3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401011454320_dbinit2.resx">
+      <DependentUpon>202401011454320_dbinit2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312311938448_dbinit4.resx">
-      <DependentUpon>202312311938448_dbinit4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401011457263_dbinit3.resx">
+      <DependentUpon>202401011457263_dbinit3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401011513599_dbinit4.resx">
+      <DependentUpon>202401011513599_dbinit4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401011518100_dbinit5.resx">
+      <DependentUpon>202401011518100_dbinit5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,12 +7,12 @@
     {
         public override void Up()
         {
-            AddColumn("dbo.Orders", "TotalPrice", c => c.Double(nullable: false));
+            AddColumn("dbo.Orders", "ProductIds", c => c.Int(nullable: false));
         }
         
         public override void Down()
         {
-            DropColumn("dbo.Orders", "TotalPrice");
+            DropColumn("dbo.Orders", "ProductIds");
         }
     }
 }

@@ -11,6 +11,7 @@ namespace FinalProject.Controllers
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class OrderController : ApiController
     {
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [HttpPost]
         [Route("api/order/{id}")]
         public HttpResponseMessage Create(OrderDTO order, int id)
@@ -26,13 +27,14 @@ namespace FinalProject.Controllers
             }
         }
 
+
         [HttpGet]
         [Route("api/order/find/{id}")]
         public HttpResponseMessage Get(int id)
         {
             try
             {
-                var data = OrderService.Get(id);
+                var data = OrderService.GetByBuyerId(id);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)

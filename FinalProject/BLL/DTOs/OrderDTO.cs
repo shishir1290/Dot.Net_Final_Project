@@ -10,7 +10,7 @@ namespace BLL.DTOs
     {
         public int Id { get; set; }
         public int BuyerId { get; set; }
-        public int ProductId { get; set; }
+        public List<int> ProductIds { get; set; }
         public int Quantity { get; set; }
         public DateTime OrderDate { get; set; }
         public string Status { get; set; }

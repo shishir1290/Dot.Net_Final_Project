@@ -54,9 +54,9 @@ namespace DAL.Repo
 
         /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-        public List<Order> SearchByCategory(int categoryId)
+        public List<Order> SearchByCategory(int Id)
         {
-            throw new NotImplementedException();
+            return db.Orders.Where(p => p.BuyerId == Id).ToList();
         }
 
         public List<Order> SearchByName(string name)

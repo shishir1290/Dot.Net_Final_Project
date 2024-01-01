@@ -3,6 +3,7 @@ using BLL.DTOs;
 using DAL;
 using DAL.EF.Model;
 using System;
+using System.Collections.Generic;
 
 namespace BLL.Services
 {
@@ -10,33 +11,45 @@ namespace BLL.Services
     {
         public static OrderDTO Create(OrderDTO order, int id)
         {
-
-            order.BuyerId = id;
+            order.OrderDate = DateTime.Now;
             order.Status = "Pending";
+            order.BuyerId = id;
 
-            var cfg = new MapperConfiguration(c => c.CreateMap<OrderDTO, Order>());
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<OrderDTO, Order>()
+                    .ForMember(dest => dest.ProductIds, opt => opt.MapFrom(src => src.ProductIds));
+            });
+
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<Order>(order);
+            var mappedOrder = mapper.Map<Order>(order);
 
-            var data = DataAccessFactory.OrderData().Create(mapped);
+            var data = DataAccessFactory.OrderData().Create(mappedOrder);
 
-            var cfg2 = new MapperConfiguration(c => c.CreateMap<Order, OrderDTO>());
+            var cfg2 = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Order, OrderDTO>()
+                    .ForMember(dest => dest.ProductIds, opt => opt.MapFrom(src => src.ProductIds));
+            });
+
             var mapper2 = new Mapper(cfg2);
-            var mapped2 = mapper2.Map<OrderDTO>(data);
+            var mappedOrderDTO = mapper2.Map<OrderDTO>(data);
 
-            return mapped2;
+            return mappedOrderDTO;
         }
 
-        /*------------------------------------------------------------------------------------------------*/
-        /*------------------------------------------------------------------------------------------------*/
-
-        public static OrderDTO Get(int id)
+        public static List<OrderDTO> GetByBuyerId(int buyerId)
         {
-            var data = DataAccessFactory.OrderData().Read(id);
+            var data = DataAccessFactory.OrderData().SearchByCategory(buyerId);
 
-            var cfg = new MapperConfiguration(c => c.CreateMap<Order, OrderDTO>());
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Order, OrderDTO>()
+                    .ForMember(dest => dest.ProductIds, opt => opt.MapFrom(src => src.ProductIds));
+            });
+
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<OrderDTO>(data);
+            var mapped = mapper.Map<List<OrderDTO>>(data);
 
             return mapped;
         }
